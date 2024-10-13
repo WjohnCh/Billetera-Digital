@@ -1,0 +1,101 @@
+:root{
+    /* PALETA DE COLORES */
+    --Orange-85: #DC5F00;
+    --Orange-75: #FF5B22;
+    --primaryColor: #FA7070;
+    --SecundaryColor: #938080;
+    --Negro-100: #000000;
+    --Negro-75: #666666;
+    --Negro-50: #B5B5B5;
+    --Negro-25: #EAEAEA;
+    --Negro-15: #F8F6F4;
+    --Negro-0: #FFFFFF;
+    --yellow-50: #FFC100;
+    /* Tamaño de letra */
+    --ExtraGrande: 70px;
+    --Tittle: 22px;
+    --Text-long: 18px !important;
+    --Text-medium: 16px;
+    --Text-small: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+}
+
+.grid-container{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.frm_login{
+    display: grid;
+    background-color: var(--Negro-15);
+    padding: 30px 40px;
+    border: 0.5px solid var(--Negro-50);
+    border-radius: 20px;
+    gap: 30px;
+    width: 440px;
+}
+
+.img_login{
+    background-color: var(--primaryColor);
+    width: min-content;
+    justify-self: center;
+    padding: 10px;
+}
+
+.img_login img{
+    width: 50px;
+    height: auto;
+}
+.input_login{
+    border: 1px solid var(--Negro-75);
+    border-radius: 10px;
+    height: 44px;
+    padding-left: 10px;
+    background-color: transparent;
+}
+.buttons_container{
+    display: grid;
+    gap: 10px;
+}
+.divisory_line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.divisory_line hr{
+    background-color: var(--Negro-75);
+    height: 1px;
+    width: 100%;
+}
+
+.button_login{
+    height: 38px;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: bold;
+    font-size: var(--Text-medium);
+    color: var(--Negro-0);
+    cursor: pointer;
+}
+.primary-button{
+    background-color: var(--primaryColor);
+}
+.secundary-button{
+    background-color: var(--SecundaryColor);
+}
+
+
+
+
+
+
