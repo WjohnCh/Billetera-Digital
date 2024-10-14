@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         event.preventDefault()
         let inputsCompletos = verificarInputsVacios(inputs)
         if (inputsCompletos) {
-            window.location.href = '../index.html';
+            window.location.href = './mensajeExito.html';
         }
     })
 })

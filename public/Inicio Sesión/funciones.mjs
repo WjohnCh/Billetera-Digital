@@ -26,6 +26,7 @@ export function verificarInputsVacios(inputs, passwords) {
         if (input.value.trim() === '') {
             input.style.border = '1px solid red'; 
             todosLlenos = false; 
+            msgerror.style.display = "block";
         } else {
             input.style.border = ''; 
         }
@@ -39,10 +40,10 @@ export function verificarInputsVacios(inputs, passwords) {
                 passwords[0].style.border = '1px solid red'; 
                 passwords[1].style.border = '1px solid red'; 
                 todosLlenos = false;
+                msgerror.style.display = "block";
             }
         }
     }
-        msgerror.style.display = "block";
 
     return todosLlenos; 
 }
