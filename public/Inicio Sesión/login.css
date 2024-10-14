@@ -101,6 +101,12 @@ body{
 .secundary-button{
     background-color: var(--SecundaryColor);
 }
+.primary-button:hover{
+    opacity: 80%;
+}
+.secundary-button:hover{
+    opacity: 80%;
+}
 
 /* REGISTRARSE */
 .container_inputs_login{
@@ -156,7 +162,7 @@ body{
 }
 
 .centrar_texto{
-    justify-self: center;
+    text-align: center;
 }
 .msgToken{
     font-size: var(--Text-small);
@@ -175,6 +181,12 @@ body{
     border-radius: 10px;
     margin-top: 14px;
     text-align: center;
+}
+
+/* MSG EXITOS */
+
+.msgfelicidad{
+    padding: 0px 10px 0px 10px;
 }
 
 
