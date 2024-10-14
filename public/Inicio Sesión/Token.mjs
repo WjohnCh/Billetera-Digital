@@ -1,3 +1,4 @@
+import {verificarInputsVacios } from './funciones.mjs';
 document.addEventListener("DOMContentLoaded",()=>{
     const inputs = document.querySelectorAll('.num_pin');
     const botonConfirmar = document.getElementById('btnConfirmar');
@@ -15,4 +16,13 @@ document.addEventListener("DOMContentLoaded",()=>{
             }
         });
     });
+
+
+    botonConfirmar.addEventListener("click", (event)=>{
+        event.preventDefault()
+        let inputsCompletos = verificarInputsVacios(inputs)
+        if (inputsCompletos) {
+            window.location.href = '../index.html';
+        }
+    })
 })

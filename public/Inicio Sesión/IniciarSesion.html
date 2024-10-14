@@ -18,17 +18,18 @@
             <figure class="img_login">
                 <img src="../assets/logo-Transfira.svg" alt="">
             </figure>
-            <input class="input_login" type="email" placeholder="Correo Electrónico">
+            <input class="input_login" type="email" placeholder="Correo Electrónico" required>
             
             <div class="contrasenia_register">
-                <input class="input_login" type="password" placeholder="Contraseña">
+                <input class="input_login" type="password" placeholder="Contraseña" required>
                 <figure class="visualizar_contrasenia">
                     <img src="../assets/ojo 1.svg" alt="">
                 </figure>
             </div>
 
             <div class="buttons_container">
-                <button class="button_login primary-button" >Iniciar Sesion</button>
+                <p class="msgError">Por favor, ingrese datos válidos</p>
+                <button type="submit" class="button_login primary-button" >Iniciar Sesion</button>
                 <div class="divisory_line">
                     <hr>
                     <p>O</p>
@@ -38,6 +39,6 @@
             </div>
         </form>
     </div>
-    <script type="module"src="./login.mjs"></script>
+    <script type="module" src="./login.mjs"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-import { verContrasenia } from './funciones.mjs';
+import { verContrasenia,verificarInputsVacios } from './funciones.mjs';
 
 document.addEventListener("DOMContentLoaded", ()=>{
     verContrasenia()
@@ -21,5 +21,21 @@ document.addEventListener("DOMContentLoaded", ()=>{
         newprefijo.value = prefijo;
         newprefijo.textContent = prefijo;
         selectPrefijos.appendChild(newprefijo);
+    })
+
+    // VERIFICACION FRONTED
+
+    const btnCrear = document.getElementById("btn_CrearCuenta")
+    const inputs = document.querySelectorAll(".inputError")
+    const passwords = document.querySelectorAll(".password_same")
+
+    btnCrear.addEventListener("click", (event)=>{
+        let inputsCompletos = verificarInputsVacios(inputs, passwords)
+        console.log(inputsCompletos);
+        
+        event.preventDefault()
+        if (inputsCompletos) {
+            window.location.href = './creacionToken.html';
+        }
     })
 })

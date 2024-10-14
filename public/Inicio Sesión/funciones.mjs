@@ -14,4 +14,35 @@ export function verContrasenia(){
             }
         })
     })
+
+
+}
+
+export function verificarInputsVacios(inputs, passwords) {
+    const msgerror = document.querySelector(".msgError")
+    let todosLlenos = true; 
+
+    inputs.forEach(input => {
+        if (input.value.trim() === '') {
+            input.style.border = '1px solid red'; 
+            todosLlenos = false; 
+        } else {
+            input.style.border = ''; 
+        }
+    });
+    if(passwords!=null){
+        if(passwords[0].value!='' && passwords[1].value!=''){
+            if (passwords[0].value == passwords[1].value){
+                passwords[0].style.border = ''; 
+                passwords[1].style.border = ''; 
+            }else{
+                passwords[0].style.border = '1px solid red'; 
+                passwords[1].style.border = '1px solid red'; 
+                todosLlenos = false;
+            }
+        }
+    }
+        msgerror.style.display = "block";
+
+    return todosLlenos; 
 }

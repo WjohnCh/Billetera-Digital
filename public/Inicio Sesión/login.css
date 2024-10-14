@@ -188,7 +188,12 @@ body{
 .msgfelicidad{
     padding: 0px 10px 0px 10px;
 }
-
+.msgError{
+    color: red;
+    text-align: center;
+    font-weight: 500;
+    display: none;
+}
 
 
 
