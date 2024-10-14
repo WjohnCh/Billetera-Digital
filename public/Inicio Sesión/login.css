@@ -18,7 +18,11 @@
     --Text-medium: 16px;
     --Text-small: 14px;
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +31,10 @@
     text-decoration: none;
     border: none;
 }
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
 
 .grid-container{
     display: grid;
@@ -122,7 +130,52 @@
 #lista_paises{
     color: var(--Negro-75);
 }
+.contrasenia_register{
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+.visualizar_contrasenia{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+.visualizar_contrasenia img{
+    width: 24px;
+}
 
+/* Crear Token */
+
+.grid{
+    display: grid;
+}
+
+.centrar_texto{
+    justify-self: center;
+}
+.msgToken{
+    font-size: var(--Text-small);
+}
+.numeros_pin{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.num_pin{
+    height: 54px;
+    width: 54px;
+    border: 1px solid var(--Negro-75);
+    background-color: transparent;
+    font-size: 40px;
+    border-radius: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
 
 
 

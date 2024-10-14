@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <form action="" class="frm_login">
+            <figure class="img_login">
+                <img src="../assets/logo-Transfira.svg" alt="">
+            </figure>
+
+            <h3 class="centrar_texto">Crea tu token de 4 dígitos</h3>
+            <p  class="centrar_texto msgToken"> Este token es importante al momento de iniciar sesión</p>
+
+            <div class="grid">
+                <h3 for="" class="centrar_texto">PIN</h3>
+                <div class="grid numeros_pin">
+                    <input  class="num_pin" type="text" pattern="[0-9]" maxlength="1" inputmode="numeric">
+                    <input  class="num_pin" type="text" pattern="[0-9]" maxlength="1" inputmode="numeric">
+                    <input  class="num_pin" type="text" pattern="[0-9]" maxlength="1" inputmode="numeric">
+                    <input  class="num_pin" type="text" pattern="[0-9]" maxlength="1" inputmode="numeric">
+                </div>
+            </div>
+
+            <div class="buttons_container">
+                <button class="button_login primary-button" id="btnConfirmar">Confirmar</button>
+            </div>  
+            <p class="mensaje_iniciarSesion">¿Ya tienes una cuenta?
+                <a href="./IniciarSesion.html">Inicia sesión</a>
+            </p>
+        </form>
+    </div>
+    <script src="./Token.js"></script>
+</body>
+</html>

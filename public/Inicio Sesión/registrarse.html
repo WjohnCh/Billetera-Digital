@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
@@ -15,16 +21,27 @@
             <div class="container_inputs_login">
                 <input class="input_login" type="text" placeholder="Nombre completo">
                 <input class="input_login" type="email" placeholder="Correo Electrónico">
-                <input class="input_login" type="password" placeholder="Contraseña">
-                <input class="input_login" type="password" placeholder="Confirmar Contraseña">
+                
+                <div class="contrasenia_register">
+                    <input class="input_login" type="password" placeholder="Contraseña">
+                    <figure class="visualizar_contrasenia">
+                        <img src="../assets/ojo 1.svg" alt="">
+                    </figure>
+                </div>
+                
+                <div class="contrasenia_register">
+                    <input class="input_login" type="password" placeholder="Confirmar Contraseña">
+                    <figure class="visualizar_contrasenia">
+                        <img src="../assets/ojo 1.svg" alt="">
+                    </figure>
+                </div>
                 
                 <select name="paises" id="lista_paises" class="input_login">
                     <option value="" disabled selected>Pais</option>
                 </select>
 
-                <div class="lista_numeros" id="lista_numeros_registrarse">
-                    <select name="prefijo" id="" class="input_login">
-                        <option value="" selected>+51</option>
+                <div class="lista_numeros" id="">
+                    <select name="prefijo" id="lista_numeros_registrarse" class="input_login">
                     </select>
                     <input class="input_login" type="number" placeholder="Número telefónico">
                 </div>
@@ -34,10 +51,12 @@
             <div class="buttons_container">
                 <button class="button_login primary-button" >Crear Cuenta</button>
                 <p class="mensaje_iniciarSesion">¿Ya tienes una cuenta?
-                    <a href="">Inicia sesión</a>
+                    <a href="./IniciarSesion.html">Inicia sesión</a>
                 </p>
             </div>            
         </form>
+
+        <script type="module" src="./registrarse.mjs"></script>
     </div>
 </body>
 </html>

@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
@@ -13,7 +19,13 @@
                 <img src="../assets/logo-Transfira.svg" alt="">
             </figure>
             <input class="input_login" type="email" placeholder="Correo Electrónico">
-            <input class="input_login" type="password" placeholder="Contraseña">
+            
+            <div class="contrasenia_register">
+                <input class="input_login" type="password" placeholder="Contraseña">
+                <figure class="visualizar_contrasenia">
+                    <img src="../assets/ojo 1.svg" alt="">
+                </figure>
+            </div>
 
             <div class="buttons_container">
                 <button class="button_login primary-button" >Iniciar Sesion</button>
@@ -22,9 +34,10 @@
                     <p>O</p>
                     <hr>
                 </div>
-                <button class="button_login secundary-button" >Crear una cuenta</button>
+                <button type="button" class="button_login secundary-button" id="btn_CrearCuenta">Crear una cuenta</button>
             </div>
         </form>
     </div>
+    <script type="module"src="./login.mjs"></script>
 </body>
 </html>
