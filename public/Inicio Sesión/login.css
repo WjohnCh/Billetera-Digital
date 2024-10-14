@@ -94,6 +94,35 @@
     background-color: var(--SecundaryColor);
 }
 
+/* REGISTRARSE */
+.container_inputs_login{
+    display: grid;
+    gap: 10px;
+}
+.mensaje_iniciarSesion{
+    font-size: var(--Text-small);
+    justify-self: center;
+    color: var(--Negro-75);
+}
+.mensaje_iniciarSesion a{
+    color: var(--Negro-75);
+    text-decoration: underline;
+}
+.lista_numeros{
+    display: flex;
+    gap: 10px;    
+}
+.lista_numeros :last-child{
+    width: 100%;
+}
+.lista_numeros :first-child{
+    width: 80px;
+    color: var(--Negro-75);
+}
+#lista_paises{
+    color: var(--Negro-75);
+}
+
 
 
 
